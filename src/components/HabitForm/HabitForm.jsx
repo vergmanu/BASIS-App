@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import * as habitsAPI from '../../utilities/habits-api';
+import './HabitForm.css'
 
 
 export default function HabitForm() {

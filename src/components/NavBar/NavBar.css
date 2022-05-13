@@ -1,0 +1,22 @@
+nav {
+    background-color: #a5ddc7;
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: #4aaa7a;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+nav > a:hover:not(.active) {
+    color:  #4aaa7a;
+    background-color: #d9eb77;
+}
+  
+/* nav-text {
+    color: #4aaa7a;
+    font-family: 'Bungee Shade', cursive;
+} */

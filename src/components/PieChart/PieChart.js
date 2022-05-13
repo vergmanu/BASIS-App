@@ -5,7 +5,6 @@ import { Pie } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function PieChart({ data }) {
-
   const chartData = {
     labels: [
       'sleep', 'work', 'exercise', 'meditation', 
@@ -26,8 +25,8 @@ export default function PieChart({ data }) {
     return (
       data ?   
       <>
-        <h5>MOOD: GOOD</h5>
-        <h6>FOOD: HEALTHY</h6>
+        <h5>MOOD: </h5>
+        <h6>FOOD: </h6>
         <div style={{width: 500}}><Pie data={chartData} /></div>
       </>
       :

@@ -26,7 +26,6 @@ export default function DetailPage() {
         habit.screenTime, 
         habit.socialTime, 
         habit.natureTime, 
-
        ])
      }
       
@@ -35,6 +34,8 @@ export default function DetailPage() {
       <h1>DetailPage</h1>
       {habits ? <HabitList habits={habits} handleClick={handleClick}/> : <p>Loading Habits </p> }
       {data ? <PieChart data={data}/> : <p> select date from above </p> }
+    
+
     </>
     );
 }
