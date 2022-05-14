@@ -1,5 +1,5 @@
 /* CSS Custom Properties */
-:root {
+/* :root {
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
   --tan-2: #E7E2DD;
@@ -8,7 +8,7 @@
   --orange: #F67F00;
   --text-light: #968c84;
   --text-dark: #615954;
-}
+} */
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -16,12 +16,16 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  sans-serif; */
+  
+  font-family: 'Fredoka One', cursive;
+  color: rgb(68, 71, 123);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVvgL_fovHEslFYvTKZQ0PKs7XfWlpqY7RQ&usqp=CAU"); */
+  background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-pattern-texture_64749-2870.jpg?w=2000");
   padding: 2vmin;
   height: 100vh;
 }

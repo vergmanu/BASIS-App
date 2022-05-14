@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import LoginForm from '../../components/LoginForm/LoginForm';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import './AuthPage.css'
 
 export default function AuthPage({ setUser }) {
   const [ currentForm, setCurrentForm ] = useState('login')
@@ -14,22 +15,21 @@ export default function AuthPage({ setUser }) {
   }
 
   return (
-    <main>
-      <h1>AuthPage</h1>
+    <main className="container AuthPage">
+      <br />
       <h3 onClick={handleClick}>
         {
           currentForm === 'login'
-          ? 'Sign Up'
-          : 'Log In'
+          ? 'NEW USER? SIGN UP'
+          : 'HAVE AN ACCOUNT? LOG IN'
         }
       </h3>
-      {
-        currentForm === 'login'
-        ? <LoginForm setUser={setUser}/>
-        :
-        <SignUpForm setUser={setUser}/>
-      }
-  
-      </main>
+        {
+          currentForm === 'login'
+          ? <LoginForm setUser={setUser}/>
+          :
+          <SignUpForm setUser={setUser}/>
+        }
+    </main>
   );
 }

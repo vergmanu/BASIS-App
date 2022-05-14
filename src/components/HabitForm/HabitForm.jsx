@@ -8,8 +8,8 @@ export default function HabitForm() {
   const navigate = useNavigate()
 
   const [formData, setFormData] = useState({
-    mood: 'Neutral',
-    food: 4,
+    mood: 'NEUTRAL',
+    food: 'OK',
     sleep: 8,
     work: 7,
     exercise: .5, 
@@ -39,107 +39,107 @@ export default function HabitForm() {
  
   return (
     <>
-    <h1>HABIT FORM</h1>
+    <h1>LOG YOUR HABITS</h1>
     <div className="container"> 
     <br /><br />
-    <form onSubmit={handleSubmit}> 
-      <label>How is your mood?</label>
+    <form className="HabitForm" onSubmit={handleSubmit}> 
+      <label>HOW'S YOUR MOOD TODAY?</label>
         <select name="mood" value={formData.mood} onChange={handleChange}>
-          <option value={'Great'}>Great</option>
-          <option value={'Good'}>Good</option>
-          <option value={'Neutral'}>Neutral</option>
-          <option value={'Meh'}>Not So Great</option>
-          <option value={'Bad'}>Bad</option>
+          <option value={'GREAT'}>GREAT</option>
+          <option value={'GOOD'}>GOOD</option>
+          <option value={'NEUTRAL'}>NEUTRAL</option>
+          <option value={'NOT SO GREAT'}>NOT SO GREAT</option>
+          <option value={'BAD'}>BAD</option>
         </select>
 
-      <label>How healthy did you eat?</label>
+      <label>HOW WELL DID YOU EAT TODAY?</label>
         <select name="food" value={formData.food} onChange={handleChange}>
-          <option value={5}>Very Healthy</option>
-          <option value={4}>Healthy</option>
-          <option value={3}>Ok</option>
-          <option value={2}>Not So Healthy</option>
-          <option value={1}>Not Healthy At All</option>
+          <option value={'VERY HEALTHY'}>VERY HEALTHY</option>
+          <option value={'HEALTHY'}>HEALTHY</option>
+          <option value={'OK'}>OK</option>
+          <option value={'NOT SO HEALTHY'}>NOT SO HEALTHY</option>
+          <option value={'NOT HEALTHY AT ALL'}>NOT HEALTHY AT ALL</option>
         </select>
 
-      <label>How many hours of sleep did you get?</label>
+      <label>HOW MUCH SLEEP DID YOU GET?</label>
         <select name="sleep" value={formData.sleep} onChange={handleChange}>
-          <option value={1}>1 hr</option>
-          <option value={2}>2 hrs</option>
-          <option value={3}>3 hrs</option>
-          <option value={4}>4 hrs</option>
-          <option value={5}>5 hrs</option>
-          <option value={6}>6 hrs</option>
-          <option value={7}>7 hrs</option>
-          <option value={8}>8 hrs</option>
-          <option value={9}>9+ hrs</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2 HOURS</option>
+          <option value={3}>3 HOURS</option>
+          <option value={4}>4 HOURS</option>
+          <option value={5}>5 HOURS</option>
+          <option value={6}>6 HOURS</option>
+          <option value={7}>7 HOURS</option>
+          <option value={8}>8 HOURS</option>
+          <option value={9}>9+ HOURS</option>
         </select>
 
-      <label>How many hours did you work or focus on a task?</label>
+      <label>HOW MANY HOURS DID YOU WORK/FOCUS ON A TASK?</label>
         <select name="work" value={formData.work} onChange={handleChange}>
-          <option value={1}>1 hr</option>
-          <option value={2}>2 hrs</option>
-          <option value={3}>3 hrs</option>
-          <option value={4}>4 hrs</option>
-          <option value={5}>5 hrs</option>
-          <option value={6}>6 hrs</option>
-          <option value={7}>7 hrs</option>
-          <option value={8}>8 hrs</option>
-          <option value={9}>9+ hrs</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2 HOURS</option>
+          <option value={3}>3 HOURS</option>
+          <option value={4}>4 HOURS</option>
+          <option value={5}>5 HOURS</option>
+          <option value={6}>6 HOURS</option>
+          <option value={7}>7 HOURS</option>
+          <option value={8}>8 HOURS</option>
+          <option value={9}>9+ HOURS</option>
         </select>
 
-      <label>How many hours did you exercise?</label>
+      <label>HOW MUCH EXERCISE DID YOU GET?</label>
         <select name="exercise" value={formData.exercise} onChange={handleChange}>
           <option value={0}>0</option>
-          <option value={.25}>.25 hr</option>
-          <option value={.5}>.5 hr</option>
-          <option value={1}>1 hr</option>
-          <option value={2}>2+ hrs</option>
+          <option value={.25}>.25 HOUR</option>
+          <option value={.5}>.5 HOUR</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2+ HOURS</option>
         </select>
 
 
-      <label>How much time did you dedicate to mindfulness?</label>
+      <label>HOW MUCH TIME DID YOU DEDICATE TO MINDFULNESS?</label>
         <select name="meditation" value={formData.meditation} onChange={handleChange}>
-          <option value={0}>0</option>
-          <option value={.25}>.25 hr</option>
-          <option value={.5}>.5 hr</option>
-          <option value={1}>1 hr</option>
-          <option value={2}>2+ hrs</option>
+          <option value={0}>NONE</option>
+          <option value={.25}>.25 HOUR</option>
+          <option value={.5}>.5 HOUR</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2+ HOURS</option>
         </select>
 
-      <label>How much time did you dedicate to free-thinking?</label>
+      <label>FREE-THINKING: HOW LONG DID YOU ALLOW YOUR MIND TO WANDER?</label>
         <select name="bdTime" value={formData.bdTime} onChange={handleChange}>
-         <option value={0}>0</option>
-          <option value={.25}>.25 hr</option>
-          <option value={.5}>.5 hr</option>
-          <option value={1}>1 hr</option>
-          <option value={2}>2+ hrs</option>
+         <option value={0}>NONE</option>
+          <option value={.25}>.25 HOUR</option>
+          <option value={.5}>.5 HOUR</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2+ HOURS</option>
         </select>
 
-      <label>What was your screen-time?</label>
+      <label>HOW MANY HOURS OF SCREEN-TIME?</label>
         <select name="screenTime" value={formData.screenTime} onChange={handleChange}>
-          <option value={1}>1 hr or less</option>
-          <option value={2}>2 hrs</option>
-          <option value={3}>3 hrs</option>
-          <option value={4}>4 hrs</option>
-          <option value={5}>5 hrs</option>
+          <option value={1}>1 HOUR OR LESS</option>
+          <option value={2}>2 HOURS</option>
+          <option value={3}>3 HOURS</option>
+          <option value={4}>4 HOURS</option>
+          <option value={5}>5 HOURS</option>
         </select>
 
-      <label>How many hours of face-to-face social interaction did you get?</label>
+      <label>HOW MUCH SOCIAL INTERACTION DID YOU GET?</label>
         <select name="socialTime" value={formData.socialTime} onChange={handleChange}>
-          <option value={0}>0</option>
-          <option value={.25}>.25 hr</option>
-          <option value={.5}>.5 hr</option>
-          <option value={1}>1 hr</option>
-          <option value={2}>2+ hrs</option>
+          <option value={0}>NONE</option>
+          <option value={.25}>.25 HOUR</option>
+          <option value={.5}>.5 HOUR</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2+ HOURS</option>
         </select>
 
-      <label>How much time did you spend in nature/gardening/etc?</label>
+      <label>HOW MUCH TIME DID YOU SPEND IN NATURE?</label>
         <select name="natureTime" value={formData.natureTime} onChange={handleChange}>
-          <option value={0}>0</option>
-          <option value={.25}>.25 hr</option>
-          <option value={.5}>.5 hr</option>
-          <option value={1}>1 hr</option>
-          <option value={2}>2+ hrs</option>
+          <option value={0}>NONE</option>
+          <option value={.25}>.25 HOUR</option>
+          <option value={.5}>.5 HOUR</option>
+          <option value={1}>1 HOUR</option>
+          <option value={2}>2+ HOURS</option>
         </select>
 
       <button type="submit">SUBMIT</button>

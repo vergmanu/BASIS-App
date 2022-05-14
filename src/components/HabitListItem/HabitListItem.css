@@ -1,0 +1,14 @@
+.Dates {
+    text-decoration: none;
+    font-size: 20px;
+    color:  rgb(168 103 169);
+    background-color: rgb(242 184 58);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50px;
+}
+  
+.Dates:hover:not(.active) {
+    color: rgb(242 184 58);
+    background-color:  rgb(128 152 206);
+}

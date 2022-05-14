@@ -1,3 +1,5 @@
+import './HabitListItem.css'
+
 export default function HabitListItem({ habit, handleClick }) {
     const months = [
         'January', 'February', 'March',
@@ -8,6 +10,12 @@ export default function HabitListItem({ habit, handleClick }) {
     const date = new Date(habit.createdAt)
 
     return (
-        <h4 onClick={() => handleClick(habit)}>DATE: {months[date.getMonth()]} {date.getDate()} {date.getFullYear()}</h4>
+
+        <container className="HabitListItem">
+        <h4 className="Dates" onClick={() => handleClick(habit)}>{months[date.getMonth()].toUpperCase()} {date.getDate()} {date.getFullYear()}</h4>
+        <p>MOOD: {habit.mood}</p>
+        <hr></hr>
+        </container>
+
     );
   }

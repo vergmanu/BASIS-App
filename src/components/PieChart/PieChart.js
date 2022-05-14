@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export default function PieChart({ data, habits}) {
+export default function PieChart({ data, moreData}) {
   const chartData = {
     labels: [
       'sleep', 'work', 'exercise', 'meditation', 
@@ -25,13 +26,16 @@ export default function PieChart({ data, habits}) {
     return (
       data ?   
       <>
-        <h5>HABIT CHART</h5>
-        <div style={{width: 500}}><Pie data={chartData} /></div>
+        <h2>SUMMARY CHART</h2>
+        <div style={{width: 500}}><Doughnut data={chartData} /></div>
 
-        <h6>hello: {habits[0].mood}</h6>
+        <h5>HOVER OVER THE PIE CHART TO SEE NUMBER OF HOURS SPENT ON EACH HABIT</h5>
+        <h4>DIET: {moreData[1]}</h4>
+        
+
       </>
       :
-      <p>loading habit</p>
+      <p>LOADING HABITS</p>
     );
   }
 

@@ -1,0 +1,8 @@
+.AuthPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.Button {
+    background-color: rgb(242 184 58);
+}

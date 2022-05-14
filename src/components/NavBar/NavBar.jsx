@@ -13,14 +13,17 @@ export default function NavBar({ user, setUser }) {
     setUser(null);
   }
   return (
-    <nav>
-      <span>BASIS</span>
-      <Link to="/habits">LOGGED HABITS</Link>
-      &nbsp; | &nbsp;
-      <Link to="/habits/new">LOG TODAY'S HABITS</Link>
-      &nbsp; | &nbsp;
-      <span>Welcome, {user.name}</span>
-      <Link to="" onClick={handleLogOut}>Log Out</Link>
-    </nav>
-  );
+    <>
+      <nav>
+        <span className="Logo">BASIS</span>
+        <Link to="/habits">SEE HABITS</Link>
+        &nbsp;&nbsp;
+        <Link to="/habits/new">ADD HABITS</Link>
+        &nbsp;&nbsp;
+        <Link to="/about">ABOUT</Link>
+        &nbsp;&nbsp;
+        <Link to="" onClick={handleLogOut}>Log Out</Link>
+      </nav>
+    </>
+    );
 }

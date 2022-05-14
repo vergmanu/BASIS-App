@@ -1,26 +1,32 @@
 nav { 
     top: 0;
     width: 100%; 
-    height: 35px;
+    height: 80px;
     border-radius: 5px;
-
-
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 20px;
 }
 
 nav > a {
     text-decoration: none;
-    color: #4aaa7a;
+    color:  rgb(168 103 169);
+    background-color: rgb(242 184 58);
     margin: 20px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
 }
   
 nav > a:hover:not(.active) {
-    color:  #4aaa7a;
-    background-color: #d9eb77;
+    color: rgb(242 184 58);
+    background-color:  rgb(128 152 206);
 }
-  
-/* nav-text {
-    color: #4aaa7a;
-    font-family: 'Bungee Shade', cursive;
-} */
+
+.Logo {
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 70px;
+    color: rgb(168 103 169);
+    display: flex;
+    text-shadow: .5px .5px #743c75;;
+}

@@ -8,6 +8,7 @@ import './DetailPage.css'
 export default function DetailPage() {
     const [habits, setHabits] = useState ([]);
     const [data, setData] = useState (null);
+    const [moreData, setMoreData] = useState (null);
 
     useEffect(function () {
         async function getHabits() {
@@ -28,14 +29,22 @@ export default function DetailPage() {
         habit.socialTime, 
         habit.natureTime, 
        ])
+       setMoreData([
+        habit.mood,
+        habit.food
+       ])
      }
       
     return (
     <>
-      <h1>HABIT SUMMARY</h1>
+      <h1>OBSERVE YOUR PATTERNS</h1>
       <container className="DetailPage">
       {habits ? <div><HabitList habits={habits} handleClick={handleClick}/></div> : <p>LOADING HABITS</p> }
-      {data ? <div><PieChart data={data} habits={habits}/></div> : <p>CLICK ON A DATE</p> }
+      {data 
+      ? <>
+      <div><PieChart data={data} moreData={moreData}/></div> 
+      </>
+      : <div><h2>HABIT CHART</h2><br/><p>SELECT A DATE</p></div> }
       </container>
     </>
     );

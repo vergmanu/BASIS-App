@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const habitSchema = new Schema({
     user: {type: Schema.Types.ObjectId, ref: 'User'},
     mood: String,
-    food: Number,
+    food: String,
     sleep: Number,
     work: Number,
     exercise: Number, 
