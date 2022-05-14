@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import * as habitsAPI from '../../utilities/habits-api';
 import HabitList from '../../components/HabitList/HabitList'
 import PieChart from '../../components/PieChart/PieChart'
+import './DetailPage.css'
 
 
 export default function DetailPage() {
@@ -31,11 +32,11 @@ export default function DetailPage() {
       
     return (
     <>
-      <h1>DetailPage</h1>
-      {habits ? <HabitList habits={habits} handleClick={handleClick}/> : <p>Loading Habits </p> }
-      {data ? <PieChart data={data}/> : <p> select date from above </p> }
-    
-
+      <h1>HABIT SUMMARY</h1>
+      <container className="DetailPage">
+      {habits ? <div><HabitList habits={habits} handleClick={handleClick}/></div> : <p>LOADING HABITS</p> }
+      {data ? <div><PieChart data={data} habits={habits}/></div> : <p>CLICK ON A DATE</p> }
+      </container>
     </>
     );
 }

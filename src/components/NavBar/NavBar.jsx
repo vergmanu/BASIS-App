@@ -14,12 +14,12 @@ export default function NavBar({ user, setUser }) {
   }
   return (
     <nav>
+      <span>BASIS</span>
+      <Link to="/habits">LOGGED HABITS</Link>
+      &nbsp; | &nbsp;
+      <Link to="/habits/new">LOG TODAY'S HABITS</Link>
+      &nbsp; | &nbsp;
       <span>Welcome, {user.name}</span>
-      &nbsp; | &nbsp;
-      <Link to="/habits">My Habits</Link>
-      &nbsp; | &nbsp;
-      <Link to="/habits/new">Log Habits</Link>
-      &nbsp; | &nbsp;
       <Link to="" onClick={handleLogOut}>Log Out</Link>
     </nav>
   );

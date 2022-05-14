@@ -38,6 +38,10 @@ export default function HabitForm() {
   }
  
   return (
+    <>
+    <h1>HABIT FORM</h1>
+    <div className="container"> 
+    <br /><br />
     <form onSubmit={handleSubmit}> 
       <label>How is your mood?</label>
         <select name="mood" value={formData.mood} onChange={handleChange}>
@@ -140,5 +144,7 @@ export default function HabitForm() {
 
       <button type="submit">SUBMIT</button>
     </form>
+    </div>
+    </>
   );
 }

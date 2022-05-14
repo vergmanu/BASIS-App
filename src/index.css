@@ -21,7 +21,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVvgL_fovHEslFYvTKZQ0PKs7XfWlpqY7RQ&usqp=CAU"); */
   padding: 2vmin;
   height: 100vh;
 }
