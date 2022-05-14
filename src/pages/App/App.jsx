@@ -6,6 +6,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import AddHabitPage from '../AddHabitPage/AddHabitPage';
 import DetailPage from '../DetailPage/DetailPage';
+import AboutPage from '../AboutPage/AboutPage'
 
 export default function App() {
   const [user, setUser] = useState (getUser());
@@ -17,6 +18,7 @@ export default function App() {
       <>
         <NavBar user={user} setUser={setUser}/> 
         <Routes>
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/habits" element={<DetailPage />} />
           <Route path="/habits/new" element={<AddHabitPage />} />
         </Routes>

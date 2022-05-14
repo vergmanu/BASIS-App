@@ -16,11 +16,11 @@ export default function NavBar({ user, setUser }) {
     <>
       <nav>
         <span className="Logo">BASIS</span>
+        <Link to="/about">ABOUT</Link>
+        &nbsp;&nbsp;
         <Link to="/habits">SEE HABITS</Link>
         &nbsp;&nbsp;
         <Link to="/habits/new">ADD HABITS</Link>
-        &nbsp;&nbsp;
-        <Link to="/about">ABOUT</Link>
         &nbsp;&nbsp;
         <Link to="" onClick={handleLogOut}>Log Out</Link>
       </nav>
