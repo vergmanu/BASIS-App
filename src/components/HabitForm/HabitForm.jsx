@@ -121,7 +121,7 @@ export default function HabitForm() {
           <option value={2}>2 HOURS</option>
           <option value={3}>3 HOURS</option>
           <option value={4}>4 HOURS</option>
-          <option value={5}>5 HOURS</option>
+          <option value={5}>5+ HOURS</option>
         </select>
 
       <label>HOW MUCH SOCIAL INTERACTION DID YOU GET?</label>
