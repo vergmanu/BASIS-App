@@ -4,7 +4,7 @@ This is an app designed for those who want to track their healthy habits in orde
 care of the basics for their well-being. This app uses Chart.js in order to visualize the data which is provided through a form 
 that the user can fill out on a daily basis. 
 
-Getting Started: https://project-basis.herokuapp.com/
+Getting Started: https://project-basis.herokuapp.com/about
 
 Trello Board: https://trello.com/b/i4PSkg84/project-4
 
