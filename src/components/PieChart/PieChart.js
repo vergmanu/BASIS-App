@@ -5,7 +5,7 @@ import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export default function PieChart({ data, moreData}) {
+export default function PieChart({ data, foodData}) {
   const chartData = {
     labels: [
       'sleep', 'work', 'exercise', 'meditation', 
@@ -30,7 +30,7 @@ export default function PieChart({ data, moreData}) {
         <div style={{width: 500}}><Doughnut data={chartData} /></div>
 
         <h5>HOVER OVER THE PIE CHART TO SEE NUMBER OF HOURS SPENT ON EACH HABIT</h5>
-        <h4>DIET: {moreData[1]}</h4>
+        <h4>DIET: {foodData}</h4>
         
 
       </>

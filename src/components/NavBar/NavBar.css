@@ -5,6 +5,7 @@ nav {
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     font-family: 'Rubik Bubbles', cursive;
     font-size: 20px;
 }
